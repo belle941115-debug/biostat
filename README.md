@@ -37,12 +37,27 @@
 - 投籃實驗（二項分佈 Binomial Distribution、機率分配模式）。
 - 代謝數據推論統計各階段課堂作業。
 
+### 5. 新藥存活分析與比例風險模型（10/29 實習專案）
+- **核心資料集**：`Survival test example.xlsx`（新藥 vs. 安慰劑組之追蹤時間與事件/設限數據）
+- **研究設計**：雙組前瞻性追蹤分析（Placebo 組 $n=6$ vs. New Drug 組 $n=6$）。
+- **統計分析與推論**：
+  - **Kaplan–Meier 存活分析**：估計兩組累積存活函數（Survival Function）與中位存活時間（Median Survival Time）。
+  - **Log-Rank 檢定 (Mantel-Cox)**：檢驗兩組存活曲線分佈是否具有顯著差異（$p = 0.1291$）。
+  - **Cox 比例風險回歸模型 (Cox Proportional Hazards Model)**：評估危險比（Hazard Ratio, HR）與 95% 信賴區間。
+  - **SPSS 雙軌對齊驗證**：比對 IBM SPSS (`生物統計學1029.doc`) 存活分析報表與數值，達成雙軌嚴格交叉驗證。
+  - **科研級視覺化**：繪製含階梯型存活曲線（Step function）、設限標記（Censoring ticks）與風險人數表（Number at Risk Table）之高解析度圖表 (`KM_survival_curve.png`)。
+
 ---
 
 ## 📂 檔案架構與目錄導覽
 
 | 檔案名稱 | 格式 | 說明 |
 | :--- | :---: | :--- |
+| `10:29 生統實習/KM_Report_20261029.pdf` | PDF | **【最新成果】** 新藥存活分析正式報告（含執行摘要、KM 曲線、Log-rank、Cox 模型與 SPSS 驗證） |
+| `10:29 生統實習/KM_Report_20261029.docx` | Word | 新藥存活分析 Word 版本交付報告 |
+| `10:29 生統實習/KM_survival_curve.png` | 圖片 | Kaplan–Meier 階梯型存活曲線圖（附設限標籤與風險人數表） |
+| `10:29 生統實習/Survival test example.xlsx` | Excel | 存活時間、分組與事件設限狀態原始資料表 |
+| `10:29 生統實習/生物統計學1029.doc` | Word/SPSS | IBM SPSS 原始存活分析報表（作為雙軌對齊依據） |
 | `DM_專案交接手冊.docx` | Word | 代謝健康數據組別差異檢定、推論模型與視覺化之完整技術交付手冊 |
 | `生統實習_統計分析移轉與SPSS雙軌驗證交接手冊.pdf` | PDF | SPSS 原始輸出與 Python 雙軌驗證比對手冊（含方法論與圖表） |
 | `橘郡異常事件調查報告-113007003-蘇芸晞.pdf` | PDF | 流行病學與公共衛生異常事件統計調查報告 |
